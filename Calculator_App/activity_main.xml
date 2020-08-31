@@ -1,1 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="8dp"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    android:paddingTop="8dp"
+    tools:context="com.jasmin.calculator.MainActivity"
+    android:orientation="vertical"
+    android:gravity="top"
+    android:background="@android:color/holo_blue_bright"
+    android:weightSum="1">
+
+    <TextView
+        android:text="CALCULATOR"
+        android:layout_width="match_parent"
+        android:id="@+id/textView"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:visibility="visible"
+        android:textSize="24sp"
+        android:layout_weight="0.07" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+
+        android:id="@+id/firstNumber"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:layout_marginBottom="5dp"
+        android:visibility="visible" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:id="@+id/secondNumber"
+        android:textSize="18sp"
+        android:gravity="center"
+         />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:text="ADD"
+            android:layout_width="78dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/button1"
+            android:layout_weight="0.03" />
+
+        <Button
+            android:text="SUB"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/button2"
+            android:layout_weight="0.03" />
+
+        <Button
+            android:text="MUL"
+            android:layout_width="78dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/button3"
+            android:layout_weight="0.03"/>
+
+        <Button
+            android:text="DIV"
+            android:layout_height="wrap_content"
+            android:id="@+id/button4"
+            android:layout_width="78dp"
+            android:layout_weight="0.03" />
+    </LinearLayout>
+
+    <TextView
+        android:text="result"
+        android:layout_width="332dp"
+        android:id="@+id/textVeiw"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:textSize="30sp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:id="@+id/result"
+        android:textSize="18sp"
+        android:text="0.00"
+        android:gravity="center" />
+</LinearLayout>
 
